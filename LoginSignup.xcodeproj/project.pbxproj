@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E9C312512A1E176800A7BECA /* LoginSignupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312502A1E176800A7BECA /* LoginSignupApp.swift */; };
-		E9C312532A1E176800A7BECA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312522A1E176800A7BECA /* ContentView.swift */; };
-		E9C312552A1E176A00A7BECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C312542A1E176A00A7BECA /* Assets.xcassets */; };
+		E9C312532A1E176800A7BECA /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312522A1E176800A7BECA /* OnboardingScreen.swift */; };
 		E9C312582A1E176A00A7BECA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C312572A1E176A00A7BECA /* Preview Assets.xcassets */; };
+		E9C3125F2A1E178D00A7BECA /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E9C3125E2A1E178D00A7BECA /* Fonts */; };
+		E9C312662A1E20DB00A7BECA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312652A1E20DB00A7BECA /* Extensions.swift */; };
+		E9C312692A1E306900A7BECA /* OnboardingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312682A1E306900A7BECA /* OnboardingDetailView.swift */; };
+		E9C3126B2A1E319000A7BECA /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3126A2A1E319000A7BECA /* OnboardingModel.swift */; };
+		E9C3126E2A1E3D5C00A7BECA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3126D2A1E3D5C00A7BECA /* LoginView.swift */; };
+		E9C312772A1E5B3A00A7BECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C312762A1E5B3A00A7BECA /* Assets.xcassets */; };
+		E9C312792A1E5B5F00A7BECA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C312782A1E5B5F00A7BECA /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9C3124D2A1E176800A7BECA /* LoginSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C312502A1E176800A7BECA /* LoginSignupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupApp.swift; sourceTree = "<group>"; };
-		E9C312522A1E176800A7BECA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E9C312542A1E176A00A7BECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9C312522A1E176800A7BECA /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		E9C312572A1E176A00A7BECA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9C3125E2A1E178D00A7BECA /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../DemoLoginSignup/DemoLoginSignup/Fonts; sourceTree = "<group>"; };
+		E9C312632A1E18B600A7BECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E9C312652A1E20DB00A7BECA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E9C312682A1E306900A7BECA /* OnboardingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDetailView.swift; sourceTree = "<group>"; };
+		E9C3126A2A1E319000A7BECA /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		E9C3126D2A1E3D5C00A7BECA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E9C312762A1E5B3A00A7BECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9C312782A1E5B5F00A7BECA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +64,12 @@
 		E9C3124F2A1E176800A7BECA /* LoginSignup */ = {
 			isa = PBXGroup;
 			children = (
-				E9C312502A1E176800A7BECA /* LoginSignupApp.swift */,
-				E9C312522A1E176800A7BECA /* ContentView.swift */,
-				E9C312542A1E176A00A7BECA /* Assets.xcassets */,
+				E9C312642A1E208A00A7BECA /* Extension */,
+				E9C3125E2A1E178D00A7BECA /* Fonts */,
+				E9C312602A1E179A00A7BECA /* Application */,
+				E9C312622A1E17C300A7BECA /* Views */,
+				E9C312612A1E17A200A7BECA /* Resources */,
+				E9C312632A1E18B600A7BECA /* Info.plist */,
 				E9C312562A1E176A00A7BECA /* Preview Content */,
 			);
 			path = LoginSignup;
@@ -65,6 +81,58 @@
 				E9C312572A1E176A00A7BECA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9C312602A1E179A00A7BECA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E9C312502A1E176800A7BECA /* LoginSignupApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E9C312612A1E17A200A7BECA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9C312762A1E5B3A00A7BECA /* Assets.xcassets */,
+				E9C312782A1E5B5F00A7BECA /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9C312622A1E17C300A7BECA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3126C2A1E3D3E00A7BECA /* Login */,
+				E9C312672A1E300600A7BECA /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9C312642A1E208A00A7BECA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E9C312652A1E20DB00A7BECA /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E9C312672A1E300600A7BECA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E9C312522A1E176800A7BECA /* OnboardingScreen.swift */,
+				E9C312682A1E306900A7BECA /* OnboardingDetailView.swift */,
+				E9C3126A2A1E319000A7BECA /* OnboardingModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E9C3126C2A1E3D3E00A7BECA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3126D2A1E3D5C00A7BECA /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +193,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C3125F2A1E178D00A7BECA /* Fonts in Resources */,
+				E9C312792A1E5B5F00A7BECA /* Colors.xcassets in Resources */,
+				E9C312772A1E5B3A00A7BECA /* Assets.xcassets in Resources */,
 				E9C312582A1E176A00A7BECA /* Preview Assets.xcassets in Resources */,
-				E9C312552A1E176A00A7BECA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C312532A1E176800A7BECA /* ContentView.swift in Sources */,
+				E9C3126E2A1E3D5C00A7BECA /* LoginView.swift in Sources */,
+				E9C312532A1E176800A7BECA /* OnboardingScreen.swift in Sources */,
+				E9C3126B2A1E319000A7BECA /* OnboardingModel.swift in Sources */,
+				E9C312662A1E20DB00A7BECA /* Extensions.swift in Sources */,
+				E9C312692A1E306900A7BECA /* OnboardingDetailView.swift in Sources */,
 				E9C312512A1E176800A7BECA /* LoginSignupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +344,7 @@
 				DEVELOPMENT_TEAM = YVTDH3XX25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoginSignup/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +374,7 @@
 				DEVELOPMENT_TEAM = YVTDH3XX25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoginSignup/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
