@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E99CC9562A1F236C0092C8E3 /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E99CC9552A1F236C0092C8E3 /* AbrilFatface-Regular.ttf */; };
 		E9C312512A1E176800A7BECA /* LoginSignupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312502A1E176800A7BECA /* LoginSignupApp.swift */; };
 		E9C312532A1E176800A7BECA /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312522A1E176800A7BECA /* OnboardingScreen.swift */; };
 		E9C312582A1E176A00A7BECA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C312572A1E176A00A7BECA /* Preview Assets.xcassets */; };
-		E9C3125F2A1E178D00A7BECA /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E9C3125E2A1E178D00A7BECA /* Fonts */; };
 		E9C312662A1E20DB00A7BECA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312652A1E20DB00A7BECA /* Extensions.swift */; };
 		E9C312692A1E306900A7BECA /* OnboardingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312682A1E306900A7BECA /* OnboardingDetailView.swift */; };
 		E9C3126B2A1E319000A7BECA /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3126A2A1E319000A7BECA /* OnboardingModel.swift */; };
@@ -20,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E99CC9552A1F236C0092C8E3 /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
 		E9C3124D2A1E176800A7BECA /* LoginSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C312502A1E176800A7BECA /* LoginSignupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupApp.swift; sourceTree = "<group>"; };
 		E9C312522A1E176800A7BECA /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		E9C312572A1E176A00A7BECA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E9C3125E2A1E178D00A7BECA /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../DemoLoginSignup/DemoLoginSignup/Fonts; sourceTree = "<group>"; };
 		E9C312632A1E18B600A7BECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E9C312652A1E20DB00A7BECA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E9C312682A1E306900A7BECA /* OnboardingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDetailView.swift; sourceTree = "<group>"; };
@@ -45,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E99CC9542A1F22CC0092C8E3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E99CC9552A1F236C0092C8E3 /* AbrilFatface-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E9C312442A1E176800A7BECA = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				E9C312642A1E208A00A7BECA /* Extension */,
-				E9C3125E2A1E178D00A7BECA /* Fonts */,
 				E9C312602A1E179A00A7BECA /* Application */,
 				E9C312622A1E17C300A7BECA /* Views */,
 				E9C312612A1E17A200A7BECA /* Resources */,
@@ -94,6 +101,7 @@
 		E9C312612A1E17A200A7BECA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E99CC9542A1F22CC0092C8E3 /* Fonts */,
 				E9C312762A1E5B3A00A7BECA /* Assets.xcassets */,
 				E9C312782A1E5B5F00A7BECA /* Colors.xcassets */,
 			);
@@ -193,10 +201,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C3125F2A1E178D00A7BECA /* Fonts in Resources */,
 				E9C312792A1E5B5F00A7BECA /* Colors.xcassets in Resources */,
 				E9C312772A1E5B3A00A7BECA /* Assets.xcassets in Resources */,
 				E9C312582A1E176A00A7BECA /* Preview Assets.xcassets in Resources */,
+				E99CC9562A1F236C0092C8E3 /* AbrilFatface-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
