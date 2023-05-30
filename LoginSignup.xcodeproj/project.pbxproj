@@ -7,7 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E98E45A02A2078E7005341EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E459F2A2078E7005341EE /* MainView.swift */; };
+		E98E45A32A207A03005341EE /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45A22A207A03005341EE /* SpacerView.swift */; };
+		E98E45A52A207BC8005341EE /* AuthButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45A42A207BC8005341EE /* AuthButtonsView.swift */; };
+		E98E45A72A207BFD005341EE /* UpperTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45A62A207BFD005341EE /* UpperTitleView.swift */; };
+		E98E45AA2A208834005341EE /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45A92A208834005341EE /* LoginModel.swift */; };
+		E98E45AC2A208844005341EE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45AB2A208844005341EE /* LoginViewModel.swift */; };
+		E98E45AE2A208876005341EE /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45AD2A208876005341EE /* SignUpModel.swift */; };
+		E98E45B02A208886005341EE /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45AF2A208886005341EE /* SignUpViewModel.swift */; };
+		E98E45B32A208A7F005341EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E98E45B22A208A7F005341EE /* Localizable.strings */; };
+		E98E45B72A208C5E005341EE /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45B52A208C5D005341EE /* XCAssets+Generated.swift */; };
+		E98E45B82A208C5E005341EE /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45B62A208C5D005341EE /* Strings+Generated.swift */; };
+		E98E45BD2A208F63005341EE /* LoginValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45BC2A208F63005341EE /* LoginValidation.swift */; };
+		E98E45BF2A208F95005341EE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45BE2A208F95005341EE /* NetworkManager.swift */; };
+		E98E45C72A2097B1005341EE /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E98E45C62A2097B1005341EE /* CombineMoya */; };
+		E98E45C92A2097B1005341EE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E98E45C82A2097B1005341EE /* Moya */; };
+		E98E45CB2A2097B1005341EE /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E98E45CA2A2097B1005341EE /* ReactiveMoya */; };
+		E98E45CD2A2097B1005341EE /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E98E45CC2A2097B1005341EE /* RxMoya */; };
+		E98E45D02A2097C7005341EE /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = E98E45CF2A2097C7005341EE /* netfox */; };
+		E98E45FF2A20B787005341EE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E45FE2A20B787005341EE /* HomeView.swift */; };
+		E98E46042A20DC76005341EE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E46032A20DC76005341EE /* UserManager.swift */; };
 		E99CC9562A1F236C0092C8E3 /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E99CC9552A1F236C0092C8E3 /* AbrilFatface-Regular.ttf */; };
+		E99CC9C22A1F745F0092C8E3 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC9C12A1F745F0092C8E3 /* ViewModifier.swift */; };
+		E9C0F70E2A1FAB0A00B730A4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C0F70D2A1FAB0A00B730A4 /* SignUpView.swift */; };
 		E9C312512A1E176800A7BECA /* LoginSignupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312502A1E176800A7BECA /* LoginSignupApp.swift */; };
 		E9C312532A1E176800A7BECA /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C312522A1E176800A7BECA /* OnboardingScreen.swift */; };
 		E9C312582A1E176A00A7BECA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C312572A1E176A00A7BECA /* Preview Assets.xcassets */; };
@@ -20,7 +42,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E98E459F2A2078E7005341EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E98E45A22A207A03005341EE /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
+		E98E45A42A207BC8005341EE /* AuthButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonsView.swift; sourceTree = "<group>"; };
+		E98E45A62A207BFD005341EE /* UpperTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTitleView.swift; sourceTree = "<group>"; };
+		E98E45A92A208834005341EE /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E98E45AB2A208844005341EE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E98E45AD2A208876005341EE /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		E98E45AF2A208886005341EE /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		E98E45B22A208A7F005341EE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E98E45B52A208C5D005341EE /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		E98E45B62A208C5D005341EE /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		E98E45BC2A208F63005341EE /* LoginValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidation.swift; sourceTree = "<group>"; };
+		E98E45BE2A208F95005341EE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E98E45FE2A20B787005341EE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E98E46032A20DC76005341EE /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		E99CC9552A1F236C0092C8E3 /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
+		E99CC9C12A1F745F0092C8E3 /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
+		E9C0F70D2A1FAB0A00B730A4 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E9C3124D2A1E176800A7BECA /* LoginSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C312502A1E176800A7BECA /* LoginSignupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupApp.swift; sourceTree = "<group>"; };
 		E9C312522A1E176800A7BECA /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
@@ -39,18 +78,108 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98E45D02A2097C7005341EE /* netfox in Frameworks */,
+				E98E45C92A2097B1005341EE /* Moya in Frameworks */,
+				E98E45C72A2097B1005341EE /* CombineMoya in Frameworks */,
+				E98E45CD2A2097B1005341EE /* RxMoya in Frameworks */,
+				E98E45CB2A2097B1005341EE /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E98E459E2A2078D5005341EE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E98E459F2A2078E7005341EE /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E98E45A12A2079C5005341EE /* CommonsubView */ = {
+			isa = PBXGroup;
+			children = (
+				E98E45A22A207A03005341EE /* SpacerView.swift */,
+				E98E45A42A207BC8005341EE /* AuthButtonsView.swift */,
+				E98E45A62A207BFD005341EE /* UpperTitleView.swift */,
+			);
+			path = CommonsubView;
+			sourceTree = "<group>";
+		};
+		E98E45B12A208A69005341EE /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				E98E45B22A208A7F005341EE /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		E98E45B42A208AC9005341EE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				E98E45B62A208C5D005341EE /* Strings+Generated.swift */,
+				E98E45B52A208C5D005341EE /* XCAssets+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		E98E45B92A208EA6005341EE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E98E45BE2A208F95005341EE /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E98E45BB2A208EC6005341EE /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				E98E45BC2A208F63005341EE /* LoginValidation.swift */,
+			);
+			path = Validations;
+			sourceTree = "<group>";
+		};
+		E98E45FD2A20B775005341EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E98E45FE2A20B787005341EE /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E98E46022A20DC63005341EE /* Utitlity */ = {
+			isa = PBXGroup;
+			children = (
+				E98E46032A20DC76005341EE /* UserManager.swift */,
+			);
+			path = Utitlity;
+			sourceTree = "<group>";
+		};
 		E99CC9542A1F22CC0092C8E3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				E99CC9552A1F236C0092C8E3 /* AbrilFatface-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E99CC9C02A1F742D0092C8E3 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				E99CC9C12A1F745F0092C8E3 /* ViewModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		E9C0F70C2A1FAAE700B730A4 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0F70D2A1FAB0A00B730A4 /* SignUpView.swift */,
+				E98E45AD2A208876005341EE /* SignUpModel.swift */,
+				E98E45AF2A208886005341EE /* SignUpViewModel.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 		E9C312442A1E176800A7BECA = {
@@ -72,6 +201,11 @@
 		E9C3124F2A1E176800A7BECA /* LoginSignup */ = {
 			isa = PBXGroup;
 			children = (
+				E98E46022A20DC63005341EE /* Utitlity */,
+				E98E45BB2A208EC6005341EE /* Validations */,
+				E98E45B92A208EA6005341EE /* Networking */,
+				E98E45B12A208A69005341EE /* Localizable */,
+				E99CC9C02A1F742D0092C8E3 /* ViewModifier */,
 				E9C312642A1E208A00A7BECA /* Extension */,
 				E9C312602A1E179A00A7BECA /* Application */,
 				E9C312622A1E17C300A7BECA /* Views */,
@@ -101,6 +235,7 @@
 		E9C312612A1E17A200A7BECA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E98E45B42A208AC9005341EE /* Generated */,
 				E99CC9542A1F22CC0092C8E3 /* Fonts */,
 				E9C312762A1E5B3A00A7BECA /* Assets.xcassets */,
 				E9C312782A1E5B5F00A7BECA /* Colors.xcassets */,
@@ -111,8 +246,12 @@
 		E9C312622A1E17C300A7BECA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E98E45FD2A20B775005341EE /* Home */,
+				E98E459E2A2078D5005341EE /* Main */,
+				E9C0F70C2A1FAAE700B730A4 /* Signup */,
 				E9C3126C2A1E3D3E00A7BECA /* Login */,
 				E9C312672A1E300600A7BECA /* Onboarding */,
+				E98E45A12A2079C5005341EE /* CommonsubView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				E9C3126D2A1E3D5C00A7BECA /* LoginView.swift */,
+				E98E45A92A208834005341EE /* LoginModel.swift */,
+				E98E45AB2A208844005341EE /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -159,6 +300,13 @@
 			dependencies = (
 			);
 			name = LoginSignup;
+			packageProductDependencies = (
+				E98E45C62A2097B1005341EE /* CombineMoya */,
+				E98E45C82A2097B1005341EE /* Moya */,
+				E98E45CA2A2097B1005341EE /* ReactiveMoya */,
+				E98E45CC2A2097B1005341EE /* RxMoya */,
+				E98E45CF2A2097C7005341EE /* netfox */,
+			);
 			productName = LoginSignup;
 			productReference = E9C3124D2A1E176800A7BECA /* LoginSignup.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +335,10 @@
 				Base,
 			);
 			mainGroup = E9C312442A1E176800A7BECA;
+			packageReferences = (
+				E98E45C52A2097B1005341EE /* XCRemoteSwiftPackageReference "Moya" */,
+				E98E45CE2A2097C7005341EE /* XCRemoteSwiftPackageReference "netfox" */,
+			);
 			productRefGroup = E9C3124E2A1E176800A7BECA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98E45B32A208A7F005341EE /* Localizable.strings in Resources */,
 				E9C312792A1E5B5F00A7BECA /* Colors.xcassets in Resources */,
 				E9C312772A1E5B3A00A7BECA /* Assets.xcassets in Resources */,
 				E9C312582A1E176A00A7BECA /* Preview Assets.xcassets in Resources */,
@@ -216,11 +369,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C3126E2A1E3D5C00A7BECA /* LoginView.swift in Sources */,
+				E98E45B82A208C5E005341EE /* Strings+Generated.swift in Sources */,
+				E98E45B02A208886005341EE /* SignUpViewModel.swift in Sources */,
+				E98E45BF2A208F95005341EE /* NetworkManager.swift in Sources */,
+				E98E45AA2A208834005341EE /* LoginModel.swift in Sources */,
+				E98E45FF2A20B787005341EE /* HomeView.swift in Sources */,
+				E99CC9C22A1F745F0092C8E3 /* ViewModifier.swift in Sources */,
+				E98E45AE2A208876005341EE /* SignUpModel.swift in Sources */,
 				E9C312532A1E176800A7BECA /* OnboardingScreen.swift in Sources */,
+				E98E45A52A207BC8005341EE /* AuthButtonsView.swift in Sources */,
+				E98E45BD2A208F63005341EE /* LoginValidation.swift in Sources */,
 				E9C3126B2A1E319000A7BECA /* OnboardingModel.swift in Sources */,
 				E9C312662A1E20DB00A7BECA /* Extensions.swift in Sources */,
+				E98E45B72A208C5E005341EE /* XCAssets+Generated.swift in Sources */,
+				E9C0F70E2A1FAB0A00B730A4 /* SignUpView.swift in Sources */,
+				E98E45AC2A208844005341EE /* LoginViewModel.swift in Sources */,
+				E98E45A72A207BFD005341EE /* UpperTitleView.swift in Sources */,
+				E98E45A02A2078E7005341EE /* MainView.swift in Sources */,
+				E98E45A32A207A03005341EE /* SpacerView.swift in Sources */,
 				E9C312692A1E306900A7BECA /* OnboardingDetailView.swift in Sources */,
 				E9C312512A1E176800A7BECA /* LoginSignupApp.swift in Sources */,
+				E98E46042A20DC76005341EE /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +592,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E98E45C52A2097B1005341EE /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya#installation";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E98E45CE2A2097C7005341EE /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E98E45C62A2097B1005341EE /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E98E45C52A2097B1005341EE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E98E45C82A2097B1005341EE /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E98E45C52A2097B1005341EE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E98E45CA2A2097B1005341EE /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E98E45C52A2097B1005341EE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		E98E45CC2A2097B1005341EE /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E98E45C52A2097B1005341EE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		E98E45CF2A2097C7005341EE /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E98E45CE2A2097C7005341EE /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9C312452A1E176800A7BECA /* Project object */;
 }

@@ -38,19 +38,23 @@ struct OnboardingScreen: View {
                         .padding()
                 }
             }
-            .frame(width : 280 , height: 50)
-            .background(LinearGradient(gradient: Gradient(colors: [Color(hex: 0xFFC52A) , Color(hex: 0xF69515)]), startPoint: .leading, endPoint: .trailing))
-            .cornerRadius(20)
+            .gradientButton()
         }
         .padding()
     }
 }
+
+
+
+
 
 struct OnboardingScreen_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingScreen()
     }
 }
+
+
 
 
 

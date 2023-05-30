@@ -17,5 +17,21 @@ extension Color {
             blue: Double((hex >> 00) & 0xff) / 255,
             opacity: alpha
         )
+        
     }
+}
+
+
+extension View {
+    
+    
+    func roundedShapeField() -> some View {
+        self.modifier(RoundedShape())
+    }
+    
+    func gradientButton() -> some View {
+        self.modifier(ButtonStyle())
+    }
+    
+    
 }
