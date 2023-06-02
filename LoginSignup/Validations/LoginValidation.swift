@@ -18,13 +18,12 @@ struct LoginValidation {
     // validate the user inputs
     func validateUserInputs(userEmail: String , userPassword: String) -> ValidationResult {
 
-        if(userEmail.isEmpty || userPassword.isEmpty){
-            return ValidationResult(success: false, errorMessage: "User email and password cannot be empty")
-        }
+//        if(userEmail.isEmpty || userPassword.isEmpty){
+//            return ValidationResult(success: false, errorMessage: "User email and password cannot be empty")
+//        }
         if(isValidEmail(value: userEmail) == false){
             return ValidationResult(success: false, errorMessage: "User email format is incorrect")
         }
-
         return ValidationResult(success: true, errorMessage: nil)
     }
 

@@ -33,5 +33,9 @@ extension View {
         self.modifier(ButtonStyle())
     }
     
-    
+    func customeColors(color1 : Color  , color2 : Color ) -> some View{
+        self.background {
+            LinearGradient(gradient: Gradient(colors: [color1 , color2]), startPoint: .leading, endPoint: .trailing)
+        }
+    }
 }

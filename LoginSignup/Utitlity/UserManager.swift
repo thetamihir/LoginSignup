@@ -7,11 +7,13 @@
 
 import Foundation
 import Moya
-
+import RxMoya
+import RxSwift
 
 enum API {
     case signup(SignUpRequest)
     case login(LoginRequest)
+    case fetchuser
     
 }
 
@@ -22,7 +24,10 @@ extension API : TargetType {
             return URL(string: "http://192.168.1.50:8000/api/v1/users/")!
         case .signup:
             return URL(string: "http://192.168.1.50:8000/api/v1/users/")!
+        case .fetchuser :
+            return URL(string: "http://192.168.1.50:8000/api/v1/")!
         }
+    
     }
     
     var path: String {
@@ -31,6 +36,8 @@ extension API : TargetType {
              return "login"
         case .signup:
             return "signup"
+        case .fetchuser:
+            return "users"
         }
     }
     
@@ -40,6 +47,8 @@ extension API : TargetType {
             return .post
         case .signup:
             return .post
+        case .fetchuser:
+            return .get
         }
     }
     
@@ -49,6 +58,8 @@ extension API : TargetType {
             return .requestJSONEncodable(request)
         case .signup (let request):
             return .requestJSONEncodable(request)
+        case .fetchuser:
+            return .requestPlain
         }
     }
     
@@ -60,23 +71,24 @@ extension API : TargetType {
 
 
 
-// LoginRequest(email: "mihir@gmail.com", password: "mihir1234")
-// SignUpRequest(name: "xyz", email: "xyz@gmail.com", password: "xyzxyz1234", passwordConfirm: "xyzxyz1234")
-
-
 protocol UserMethods {
-    
-    func loginRequest(data  : LoginRequest ,  completion:  @escaping (Result< LoginResponse , Error>) -> ())
-    func signupRequest(data  : SignUpRequest , completion:  @escaping (Result< LoginResponse , Error>) -> ())
+    func loginRequest(data : LoginRequest ,  completion:  @escaping (Result < APIResponse , NetworkError>) -> ())
+    func signupRequest(data : SignUpRequest , completion:  @escaping (Result < APIResponse , NetworkError>) -> ())
 }
 
 struct UserManager : UserMethods {
-    func signupRequest(data : SignUpRequest , completion: @escaping (Result<LoginResponse, Error>) -> ()) {
-        Networkmanager.share.request(target: .signup(data), completion: completion)
+    
+
+    func loginRequest(data : LoginRequest , completion: @escaping (Result< APIResponse, NetworkError>) -> ()) {
+        Networkmanager.shared.request(api: .login(data), completion: completion)
+    
     }
     
-    func loginRequest(data : LoginRequest , completion: @escaping (Result<LoginResponse, Error>) -> ()) {
-        Networkmanager.share.request(target: .login(data), completion: completion)
+    func signupRequest(data : SignUpRequest , completion: @escaping (Result< APIResponse, NetworkError>) -> ()) {
+        Networkmanager.shared.request(api: .signup(data), completion: completion)
     }
-    
+
 }
+
+
+

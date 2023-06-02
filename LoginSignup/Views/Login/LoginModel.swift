@@ -7,13 +7,28 @@
 
 import Foundation
 
-struct LoginResponse: Decodable {
-    let error: Bool
-    let message : String
-    let data: LoginResponseData?
+
+
+struct LoginDataModel   {
+    var email: String = String()
+    var password: String = String()
+    var error: String = String()
+    var navigate: Bool = false
+    var isPresentingErrorAlert: Bool = false
+    var navigateSignup : Bool = true
+    
+    var buttonValidation : Bool {
+        return ( email.isEmpty || password.isEmpty )
+    }
+    
+    var buttonOpecity : Double {
+        return buttonValidation ? 0.6 : 1.0
+    }
+    
+   
 }
 
-struct LoginResponseData : Decodable {
+struct LoginResponseData : Codable{
     let role : String
   //  let birthDate : String
     let email : String
@@ -26,10 +41,10 @@ struct LoginRequest : Encodable {
 }
 
 
-struct LoginDataModel   {
-    var email: String = String()
-    var password: String = String()
-    var error: String = String()
-    var navigate: Bool = false
-    var isPresentingErrorAlert: Bool = false
+
+struct UserResponse : Codable {
+    let role : String
+    let email : String
+    let name : String
+    let gender : String
 }

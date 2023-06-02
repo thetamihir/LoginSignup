@@ -9,12 +9,18 @@ import SwiftUI
 
 struct LoginView: View {
     
+    
+    @FocusState var focus1: Bool
+    @FocusState var focus2: Bool
+    @State var showPassword: Bool = false
+    @State var navigateSignupScreen : Bool = false
+  //  @Binding var currentView: ContentView
+
     @StateObject var loginVM = LoginViewModel()
+    @StateObject var userVM = HomeViewModel()
     @State private var isSecured: Bool = true
     
     var body: some View {
-        
-        NavigationStack{
             VStack{
                 Image("login_bg")
                     .resizable()
@@ -29,13 +35,15 @@ struct LoginView: View {
                 .padding(.horizontal , 30)
             }
             .frame(maxHeight: .infinity)
-        }
+            .navigationBarBackButtonHidden()
+        
     }
 }
 
 
 
 extension LoginView{
+    
     @ViewBuilder private var TitleView : some View {
         UpperTitleView(title: "Welcome back", subTitle: "Login to your account")
     }
@@ -46,10 +54,32 @@ extension LoginView{
             TextField("email", text: $loginVM.loginDataModel.email)
                 .autocapitalization(.none)
                 .roundedShapeField()
-            RoundedImageTextField(
-                textField: SecureField("password", text: $loginVM.loginDataModel.password),imageName: "passwordshow")
-                .autocapitalization(.none)
-                .roundedShapeField()
+                SecureTextField
+               .roundedShapeField()
+        }
+    }
+    
+    
+    @ViewBuilder private var SecureTextField : some View {
+        HStack {
+            ZStack(alignment: .trailing) {
+                TextField("Password", text: $loginVM.loginDataModel.password)
+                    .textContentType(.password)
+                    .focused($focus1)
+                    .opacity(showPassword ? 1 : 0)
+                    .autocapitalization(.none)
+                SecureField("Password", text: $loginVM.loginDataModel.password)
+                    .textContentType(.password)
+                    .focused($focus2)
+                    .opacity(showPassword ? 0 : 1)
+                    .autocapitalization(.none)
+                Button(action: {
+                    showPassword.toggle()
+                    if showPassword { focus1 = true } else { focus2 = true }
+                }, label: {
+                    Image(self.showPassword ? "pass_show" : "pass_hide" )
+                })
+            }
         }
     }
 
@@ -80,50 +110,57 @@ extension LoginView{
             }
         }
     }
+    
     @ViewBuilder private var BottomView : some View {
+     
         VStack{
-            Button(action: {
-                if(loginVM.validateUserInputs()){
-                    loginVM.authenticateUser()
-                }
-            }, label: {
-                Text("Log In")
-                    .foregroundColor(.white)
-                    .fontWeight(.bold)
-                    .gradientButton()
-            }).alert(isPresented: $loginVM.loginDataModel.isPresentingErrorAlert, content: {
-                Alert(title: Text("Alert"), message: Text(loginVM.loginDataModel.error), dismissButton: .cancel(Text("Ok")))
-            })
-            .navigationDestination(isPresented: $loginVM.loginDataModel.navigate) {
-                HomeView()
+            NavigationLink(destination: HomeView(), isActive: $loginVM.loginDataModel.navigate) {
+                Button(action: {
+                    if(loginVM.validateUserInputs()){
+                        loginVM.userLogin()
+                        userVM.fetchUser()
+                    }
+                }, label: {
+                    Text("Log In")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .gradientButton()
+                    
+                })
+                .opacity(loginVM.loginDataModel.buttonOpecity)
+                .disabled(loginVM.loginDataModel.buttonValidation)
+                .alert(isPresented: $loginVM.loginDataModel.isPresentingErrorAlert, content: {
+                    Alert(title: Text("Alert"), message: Text(loginVM.loginDataModel.error), dismissButton: .cancel(Text("Ok")))
+                })
             }
-            
-            
-            SpacerView()
-            AuthButtonsView()
-            HStack{
-                Text("Don’t have an Account? ")
-                    .fontWeight(.regular)
-                    .font(.system(size: 12))
-                Button {
-                } label: {
-                    Text("Create Account")
-                        .foregroundColor(Color("highlight_color"))
+                SpacerView()
+                AuthButtonsView()
+                HStack{
+                    Text("Don’t have an Account? ")
                         .fontWeight(.regular)
                         .font(.system(size: 12))
+                    NavigationLink {
+                        SignUpView()
+                    } label: {
+                        Text("Create Account")
+                            .foregroundColor(Color("highlight_color"))
+                            .fontWeight(.regular)
+                            .font(.system(size: 12))
+                    }
                 }
-                
             }
-            
         }
+
     }
-}
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
         //            .frame(width: 350, height: 700)
         //            .previewLayout(.sizeThatFits)
+        
+      
     }
 }
 

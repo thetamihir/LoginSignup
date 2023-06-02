@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct LoginSignupApp: App {
+    
+    //@State private var currentView: ContentView = .onboarding
+    
     var body: some Scene {
         WindowGroup {
-           LoginView()
+          MainView()
         }
     }
 }

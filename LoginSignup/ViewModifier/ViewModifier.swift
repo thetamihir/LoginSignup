@@ -20,7 +20,7 @@ struct ButtonStyle : ViewModifier {
             .background(LinearGradient(gradient: Gradient(colors: [Color("yellow_light") , Color("yellow_dark")]), startPoint: .leading, endPoint: .trailing))
             .cornerRadius(20)
     }
-    
+
 }
 
 
@@ -48,3 +48,5 @@ struct RoundedImageTextField: View {
         }
     }
 }
+
+
